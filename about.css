@@ -1,0 +1,460 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lato, sans-serif;
+}
+
+/* --------------HEADER--------------------------- */
+.first-section-background{
+  background-image: url("./images/mobile_intro_bg.png");
+  background-size: cover;
+  width: 100%;
+}
+
+.top-nav{
+  display: none;
+}
+
+a{
+  text-decoration: none;
+  color: #272A31;
+}
+
+.horiz-nav{
+  width: 100%;
+  height: 0.4%;
+  background-color: #EC5242;
+}
+
+.logo{
+  color: #D71303;
+  font-size: 3rem;
+}
+
+.nav-links-ul{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  padding: 3%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: white;
+  list-style: none;
+  color: #272A31;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  flex-direction: column;
+  row-gap: 5%;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.nav-links-ul.show{
+  display: flex;
+}
+
+.close{
+  position: absolute;
+  top: 2%;
+  right: 15%;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4%;
+  width: 100%;
+}
+
+
+.toggle-bar{
+display: flex;
+flex-direction: column;
+visibility: visible;
+}
+
+.bar{
+width: 20px;
+height: 2px;
+margin: 2px;
+background-color:#272A31;
+}
+
+/* ------------------INTRO--------------------------- */
+.introduction{
+  padding: 4%;
+  width: 100%;
+}
+
+.intro-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
+
+.greeting{
+  font-size: 1.2rem;
+  color: #EC5242;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.welcome{
+  font-size:2rem ;
+  font-weight: 900;
+  color: #D71303;
+  margin-top: 2%;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.underline-img{
+  width: 7%;
+
+}
+
+.intro-paragraph{
+  margin: 8% 0;
+  padding: 2%;
+  text-align: left;
+  color: #555;
+  border: 2px solid white;
+  background: #F5F5F6;
+}
+
+.intro-paragraph > p{
+  font-size: 1rem;
+  text-align: center;
+  line-height: 24px;
+}
+
+.email{
+  font-size: 0.8rem;
+  color: #272930;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.address{
+  color:#555;
+  font-size: 1rem;
+  margin-top: 2%;
+  text-align: center;
+}
+
+/* ---------------------About Logo------------------------ */
+.about-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7%;
+  width: 100%;
+  border-bottom: 2px solid #EDEDED;
+}
+
+.about-title{
+  text-align: center;
+  color: #272930;
+  margin-bottom: 2%;
+}
+
+.about-p{
+  margin-top: 3%;
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+  line-height: 24px;
+  margin-bottom: 5%;
+ 
+}
+
+.logo-display{
+  border: 2px solid #EDEDED;
+  padding: 8%;
+  width:80%;
+  font-weight: 900;
+  align-self: center;
+}
+
+.about-logo-name{
+  text-align: center;
+}
+
+/* ------------------------See Past------------------------------- */
+.see-past{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
+
+.see-past-title{
+  text-align: center;
+  color: #272930;
+  margin-bottom: 2%;
+}
+
+.see-past-img-div{
+  width: 100%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.see-past-img{
+  margin-top: 5%;
+}
+
+.see-about-p{
+  margin-top: 3%;
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+  line-height: 24px;
+  margin-bottom: 5%;
+}
+
+.desktop-about-p{
+ display: none;
+}
+
+/* --------------Partners Section-------------------- */
+.partners{
+ background: #272A31; 
+ display: flex;
+ align-items:center;
+ justify-content: center;
+ padding: 6%;
+ flex-wrap: wrap;
+}
+
+.partner-img{
+  width: 30%;
+}
+
+.partner-title-div{
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+footer{
+  display: flex;
+  gap: 1%;
+  height: 30vh;
+  padding: 5%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+  .footer-logo{
+flex: 1;
+color: #EC5242;
+font-size: 3rem;
+font-weight: 900;
+text-align: center;
+}
+
+
+.reserved{
+    flex: 2;
+}
+  
+/* -------------DESKTOP VERSION-------------------------- */
+@media screen and (width >= 768px) { 
+  /* -------------------Nav------------------- */
+  .top-nav{
+    background: #272A31;
+    display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   gap:2%;
+   padding: 0.3%;
+   padding-right: 17%;
+   width: 100%;
+  }
+
+  .top-link{
+    text-decoration: none;
+    color: white;
+
+  }
+
+ .nav{
+  padding: 0.1%;
+  justify-content: space-around;
+  background-color: white;
+  margin: 0;
+ }
+
+ .logo{
+  padding-left: 4%;
+ }
+
+ .toggle-bar{
+  visibility: hidden;
+}
+
+ .nav-links-ul{
+  background: none;
+  display: flex;
+  position:static;
+  padding: 0;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 10%;
+  list-style: none;
+  width: 60%;
+  align-items: baseline;
+ }
+
+.nav-links{
+  display: flex;
+  row-gap: 5%;
+  color: #272930;
+  font-size: 1rem;
+  border: none;
+}
+
+.about-active{
+  color: #D71303;
+}
+
+.horiz-nav{
+  display: none;
+}
+
+.close{
+  display: none;
+}
+
+.nav-links:hover{
+  color: #D71303;
+}
+
+.special-link{
+  border: 4px solid #D71303;
+  padding: 2%;
+}
+
+/* -------------INTRO ------------------------------ */
+.first-section-background{
+  background-image:none;
+}
+
+.introduction{
+  background-image: url("./images/main_big.png");
+  background-size: cover;
+  width: 100%;
+}
+
+.greeting{
+  margin-top: 1%;
+  font-size: 2rem;
+}
+
+.welcome{
+  font-size: 3.5rem;
+}
+
+.intro-paragraph{
+  width: 80%;
+  margin-bottom: 2%;
+  background:white;
+  border: 2px solid #F5F5F6;
+}
+
+.intro-paragraph > p{
+  font-size: 1rem;
+  
+}
+
+.email{
+  font-size: 0.8rem;
+}
+
+.address{
+  font-size: 0.9rem;
+  width: 70%;
+}
+
+.underline-img{
+  width: 5%;
+}
+
+/* ------------------About Logo-------------------- */
+.about-logo-name{
+  font-size: 4rem;
+}
+
+.logo-display{
+  width: 60%;
+  padding: 4%;
+}
+
+.desktop-about-p{
+  margin-top: 3%;
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+  line-height: 24px;
+  margin-bottom: 5%;
+  display: flex; 
+  width: 70%;
+}
+
+.about-p{
+  display: none;
+}
+
+/* ----------------See Past----------------------- */
+.see-past{
+  padding: 5%;
+}
+
+.see-about-p{
+  margin-bottom: 1%;
+}
+
+.see-past-img-div{
+  flex-direction: row;
+  gap:3%;
+  align-items: center;
+  justify-content: center;
+}
+
+.see-past-img{
+  margin-top: 2%;
+}
+
+/* ----------------Partner-section----------------- */
+.partners{
+  padding: 3%;
+}
+
+.partner-img{
+  width: 15%;
+}
+
+.partner-title-div{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 1.3rem;
+}
+}
