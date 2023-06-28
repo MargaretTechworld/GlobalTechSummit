@@ -296,7 +296,7 @@ text-align: center;
   }
 
  .nav{
-  padding: 1%;
+  padding: 0.1%;
   justify-content: space-around;
   background-color: white;
   margin: 0;
@@ -314,6 +314,7 @@ text-align: center;
   background: none;
   display: flex;
   position:static;
+  padding: 0;
   height: fit-content;
   flex-direction: row;
   justify-content: space-around;
