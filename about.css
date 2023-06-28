@@ -438,16 +438,19 @@ footer {
 
   /* ----------------Partner-section----------------- */
   .partners {
-    padding: 3%;
+    display: none;
   }
 
-  .partner-img {
-    width: 15%;
+  footer {
+    background: #272a31;
+    gap: 3%;
   }
 
-  .partner-title-div {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    font-size: 1.3rem;
+  .reserved {
+    color: white;
+  }
+
+  .ft-logo {
+    text-align: right;
   }
 }
