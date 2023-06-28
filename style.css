@@ -35,12 +35,12 @@ a{
 
 .nav-links-ul{
   width: 100%;
-  padding: 3%;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
+  padding: 1%;
   background: white;
   list-style: none;
   color: #272A31;
@@ -303,7 +303,7 @@ text-align: center;
   }
 
  .nav{
-  padding: 1%;
+  padding: 0.1%;
   justify-content: space-around;
   background-color: white;
   margin: 0;
@@ -320,6 +320,7 @@ text-align: center;
  .nav-links-ul{
   background: none;
   display: flex;
+  padding: 0;
   position:static;
   height: fit-content;
   flex-direction: row;
