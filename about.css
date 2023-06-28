@@ -14,10 +14,14 @@
 .top-nav{
   display: none;
 }
+a{
+  text-decoration: none;
+  color: #272A31;
+}
 .horiz-nav{
   width: 100%;
-  height: 0.1%;
-  background-color: white;
+  height: 0.4%;
+  background-color: #EC5242;
 }
 .logo{
   color: #D71303;
@@ -30,9 +34,10 @@
   top: 0;
   left: 0;
   z-index: 1;
-  background: #272A31;
+  background: white;
   list-style: none;
-  color: white;
+  color: #272A31;
+  text-decoration: none;
   font-size: 1.5rem;
   font-weight: 500;
   display: flex;
@@ -63,27 +68,6 @@
   background-color: white;
 }
 
-.nav-links-ul{
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  background: #272A31;
-  list-style: none;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  row-gap: 5%;
-  align-items: center;
-  justify-content: center;
-  display: none;
-}
-.nav-links-ul.show{
-  display: flex;
-}
 .close{
   position: absolute;
   top: 2%;
@@ -107,135 +91,130 @@ background-color:#272A31;
   padding: 4%;
   width: 100%;
 }
+.intro-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
 .greeting{
   font-size: 1.2rem;
   color: #EC5242;
   margin-top: 2%;
+  text-align: center;
 }
 .welcome{
   font-size:2rem ;
   font-weight: 900;
   color: #D71303;
   margin-top: 2%;
+  text-align: center;
+  margin-bottom: 1%;
+}
+.underline-img{
+  width: 7%;
+
 }
 .intro-paragraph{
-  margin-top: 2%;
+  margin-top: 8%;
   padding: 2%;
   text-align: left;
   margin-left: 0;
   margin-right: 0;
   color: #555555;
   border: 2px solid white;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
   background: #F5F5F6;
 }
 .intro-paragraph > p{
   font-size: 1rem;
+  text-align: center;
+  line-height: 24px;
 }
-.date{
-  font-size: 1.2rem;
+.email{
+  font-size: 0.8rem;
   color: #272930;
   font-weight: 700;
+  text-decoration: underline;
 }
 .address{
   color:#555555;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 2%;
+  text-align: center;
 }
 
-/* -------------MAIN PROGRAM----------------------------- */
-
-.main-program{
-  background: url(./images/pattern_bg.png);
-  background-repeat: repeat;
-  background-color: #272930;
-  color: white;
-  padding: 5%;
+/* ---------------------About Logo------------------------ */
+.about-logo{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-.main-program-title-div{
-  width: 100%;
-  margin-top: 4%;
-  text-align: center;
-}
-.programs{
-  margin-top: 8%;
-  background-color:#f7f7f71a;
-  display: grid;
-  grid-template-columns: 1fr 1fr 3fr;
-  grid-template-rows: 1fr;
   align-items: center;
-  gap: 2%;
-  padding: 3%;
+  justify-content: center;
+  padding: 7%;
+  width: 100%;
+  border-bottom: 2px solid #EDEDED;
 }
-
-.activities{
-  color: #D71303;
-  font-size: 0.9rem;
-  word-wrap: break-word;
-}
-.seeMore{
-  display: none;
-}
-.mobile-button{
-  margin-top: 10%;
-  padding: 8%;
-  width: 80%;
+.about-title{
+  text-align: center;
+  color: #272930;
+  margin-bottom: 2%;
+}.about-p{
+  margin-top: 3%;
+  text-align: center;
+  color: #555555;
   font-size: 1rem;
+  line-height: 24px;
+  margin-bottom: 5%;
+ 
+}
+.logo-display{
+  border: 2px solid #EDEDED;
+  padding: 8%;
+  width:80%;
+  font-weight: 900;
   align-self: center;
-  background: #D71303;
-  color:white;
-  border: none;
 }
-
-/* ---------------------SPEAKER------------------------ */
-.speakers-section{
-  padding: 5%;
-}
-.speaker-title-rule{
-  margin-top: 10%;
+.about-logo-name{
   text-align: center;
 }
-.speaker-div{
+
+/* ------------------------See Past------------------------------- */
+.see-past{
+  width: 100%;
   display: flex;
-  column-gap: 5%;
-  margin-top: 10%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
 }
-.about-speaker{
-  flex: 2;
+.see-past-title{
+  text-align: center;
+  color: #272930;
+  margin-bottom: 2%;
 }
-.speaker-img{
-  flex: 1;
+.see-past-img-div{
+  width: 100%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
 }
-.speaker-section-title{
-  font-size:1.5rem;
-}
-.speaker-name{
-  margin-bottom: 5%;
-  font-weight: 900;
-  font-size: 1.2rem;
-}
-.speaker-profession{
-  margin-top: 3%;
-  color: #D71303;
-  font-style: italic;
-  font-size: 0.8rem;
-  font-weight: 600;
-  margin-bottom: 3%;
-}
-.rule{
-  width: 10%;
-  height: 1px;
-  background: black;
+.see-past-img{
   margin-top: 5%;
+}
+.see-about-p{
+  margin-top: 3%;
+  text-align: center;
+  color: #555555;
+  font-size: 1rem;
+  line-height: 24px;
   margin-bottom: 5%;
 }
-.speaker-bio{
-  font-size: 0.8rem;
+
+.desktop-about-p{
+ display: none;
 }
+
 /* --------------Partners Section-------------------- */
 .partners{
  background: #272A31; 
@@ -272,13 +251,14 @@ color: #EC5242;
 font-size: 3rem;
 font-weight: 900;
 text-align: center;
-  }
-  footer{
+}
+
+footer{
     column-gap: 1%;
-  }
-  .reserved{
+}
+.reserved{
     flex: 2;
-  }
+}
   
 /* -------------DESKTOP VERSION-------------------------- */
 @media screen and (min-width: 768px) { 
@@ -330,6 +310,9 @@ text-align: center;
   font-size: 1rem;
   border: none;
 }
+.about-active{
+  color: #D71303;
+}
 .horiz-nav{
   display: none;
 }
@@ -341,10 +324,10 @@ text-align: center;
 }
 .special-link{
   border: 4px solid #D71303;
-  padding: 1%;
+  padding: 2%;
 }
 
-/* -------------INTRO -------------------------------- */
+/* -------------INTRO ------------------------------ */
 .first-section-background{
   background-image:none;
 }
@@ -353,9 +336,7 @@ text-align: center;
   background-size: cover;
   width: 100%;
 }
-.intro-div{
-margin-left: 6%;
-}
+
 .greeting{
   margin-top: 1%;
   font-size: 2rem;
@@ -364,63 +345,62 @@ margin-left: 6%;
   font-size: 3.5rem;
 }
 .intro-paragraph{
-  width: 50%;
+  width: 80%;
   margin-bottom: 2%;
+  background:white;
+  border: 2px solid #F5F5F6;
 }
-.date{
-  font-size: 2rem;
+.intro-paragraph > p{
+  font-size: 1rem;
+  
+}
+.email{
+  font-size: 0.8rem;
 }
 .address{
-
-  font-size: 1rem;
-}
-
-/* ----------------------PROGRAM SECTION---------------------------- */
-.main-program-title{
-  font-size: 1.5rem;
-}
-.programs{
- gap: 4%;
- display:flex;
- flex-direction: column;
-
-}
-.activities{
-  font-size: 1.2rem;
-}
-.activities-p{
-  text-align: center;
-  line-height: 21px;
   font-size: 0.9rem;
+  width: 70%;
 }
-.cards{
-  display: flex;
-  gap: 0.2%;
+.underline-img{
+  width: 5%;
 }
-.seeMore{
-  display: block;
+/* ------------------About Logo-------------------- */
+.about-logo-name{
+  font-size: 4rem;
+}
+.logo-display{
+  width: 60%;
+  padding: 4%;
+}
+.desktop-about-p{
+  margin-top: 3%;
   text-align: center;
-  margin-top: 5%;
-  text-transform:uppercase;
-  text-decoration: underline;
-  font-size: 0.8rem;
-
+  color: #555555;
+  font-size: 1rem;
+  line-height: 24px;
+  margin-bottom: 5%;
+  display: flex; 
+  width: 70%;
 }
-.mobile-button{
+.about-p{
   display: none;
 }
-
-/* -------------SPEAKERS SECTIONS------------------- */
-.speakers-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+/* ----------------See Past----------------------- */
+.see-past{
+  padding: 5%;
 }
-.speaker-title-rule{
-  margin-top: 5%;
-  margin-bottom: 3%;
+.see-about-p{
+  margin-bottom: 1%;
 }
-
+.see-past-img-div{
+  flex-direction: row;
+  gap:3%;
+  align-items: center;
+  justify-content: center;
+}
+.see-past-img{
+  margin-top: 2%;
+}
 /* ----------------Partner-section----------------- */
 .partners{
   padding: 3%;
